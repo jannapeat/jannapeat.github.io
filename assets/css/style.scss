@@ -1,11 +1,8 @@
 ---
 ---
-
-@import "{{ site.theme }}";
-
 body {
 background-color: #FCF7F8;
-border: 2px solid gray;
+border: 2px solid #275DAD;
 border-radius: 16px;
 font-family: sans-serif;
 margin-left: auto;
@@ -46,8 +43,7 @@ font-size: 16px;
 }
 
 #para1 {
-text-align:centre;
-color: black;
+color: #5B616A;
 }
 
 ul {
@@ -55,7 +51,7 @@ ul {
 
 nav ul {
 list-style-type:round;
-border: 4px solid gray;
+border: 4px solid #C3f3C0;
 border-radius: 6px;
 font-family: sans-serif;
 font-weight: bold;
@@ -95,14 +91,13 @@ background-color: #ABA9C3;
 }
 
 p.top-tip::before {
-color: Black;
+color: #5B616A;
 content: "MEGA TIP!: ";
 font-weight: bold;
 }
 
 p {
-color:black;
-text-align: centre;
+color: #5B616A;
 }
 
 table {
@@ -126,11 +121,11 @@ background-color: #ABA9C3;
 }
 
 a:link {
-color: blue;
+color: #313B72;
 }
 
 a:visited {
-color: purple;
+color: #462255;
 }
 
 a:hover {
@@ -139,7 +134,7 @@ text-decoration: underline;
 
 a:active {
 text-decoration: underline;
-background-color: black;
-color: white;
+background-color: #5B616A;
+color: #FCF7F8;
 }
-
+@import "{{ site.theme }}";
