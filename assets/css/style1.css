@@ -1,0 +1,183 @@
+---
+---
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+</style>
+
+/* technical stuff - set sizing to border box method */ 
+html {
+box-sizing: border-box;
+} 
+
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+/* set maximum and minimum widths for the body and centre within the viewport */
+body {
+background-color: #FCF7F8;
+color:#111111;
+font-family: 'Open Sans Condensed', sans-serif;
+margin-left: auto;
+margin-right: auto;
+max-width: 1024px;
+min-width: 256px;
+padding-left: 18px;
+padding-right: 24px;
+}
+
+/* add a fancy background */ 
+html {
+background: radial-gradient(circle, #5B616A, #275DAD 50%, #CED3DC 50%, #5B616A);
+background-size: 10px 10px;
+} 
+
+/* header */
+header {
+}
+
+header p {
+float: left;
+font-size: 24px;
+font-weight: bold;
+margin-top: 0px;
+}
+
+header h1 {
+front-size: 10px;
+text-align: right;
+}
+
+footer p.copyright {
+float: left;
+margin-top: 0px;
+}
+
+footer p.contact {
+text-align: right;
+}
+
+nav {
+background-color: #FCF7F8;
+} 
+
+article {
+background-color: #FCF7F8;
+}
+
+/* the aside */
+aside {
+background-color: #FCF7F8;
+}
+
+/* footer */
+footer {
+background-color: #FCF7F8;
+} 
+
+/* small images are set to 200px in height */
+img.small {
+height: 200px;
+float: left;
+margin-bottom: 12px;
+margin-right: 12px;
+}
+
+/* medium images can be 50% of the container element's width, up to 360px */
+img.medium {
+max-width: 360px;
+width: 40%;
+}
+
+/* large images are 100% of the container elements which are to have border */
+img.large {
+width: 96%;
+}
+
+/* the menu */
+nav ul {
+list-style-type:round;
+border: 4px solid gray;
+border-radius: 6px;
+font-family: sans-serif;
+font-weight: bold;
+font-size: 16px;
+padding: 8px;
+}
+
+nav ul li {
+display: inline;
+border-right: 2px
+solid #5B616A;
+padding-right: 8px;
+padding-left: 8px;
+}
+
+nav ul li:last-child { 
+border-right: none;
+}
+
+nav ul li a {
+text-decoration:none;
+}	
+
+nav li.selected {
+color: #606060;
+}
+
+nav li a:hover {
+text-decoration: underline;
+}
+
+/* biographies */
+section {
+background-color: #CED3DC;
+margin-bottom: 12px;
+min-height: 280px;
+padding-left: 24px;
+padding-right: 24px;
+}
+
+/* add the same style border to the elements which are are to have borders */
+body, section, img {
+border: 2px solid gray;
+border-radius: 16px;
+}
+
+/* the bits that are specific to a wide viewport (over 56em) */
+@media all and (min-width: 900px) {
+article {
+float: left;
+width: 62%;
+}
+
+aside {
+float: left;
+padding-left: 62px;
+width: 30%;
+}
+
+footer {
+clear: both;
+}
+}	
+
+@media all and (min-width: 480px) {
+article {
+float: left;
+width: 62%;
+}
+
+aside {
+float: left;
+padding-left: 62px;
+width: 30%;
+}
+
+footer {
+clear: both;
+}
+}	
+
+@import "{{ site.theme }}";
